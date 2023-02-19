@@ -1,88 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anthony's Weather App</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <title>Weather DashBoard API</title>
+    <link rel="stylesheet" href="assets/style.css" />
 </head>
 
-    <body>
+<body>
+  <section class="hero is-small is-primary is-outlined is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title" style="font-size:60px">&#127781; Weather DashBoard</h1>
+      </div>
+    </div>
+  </section>
+
     
-        <section class="hero is-small is-primary is-outlined is-bold">
-          <div class="hero-body">
-            <div class="container">
-              <h1 class="title" style="font-size:60px">&#127781; Weather DashBoard</h1>
-            </div>
-          </div>
-        </section>
-        <div class="section">
-          <div class="container has-text-center">
-            <div class="columns is-center">
-              <div class="column is-4">
-                <h2 class="subtitle is-5 has-text-left">Search for a City:</h2>
-                <form>
-                  <!--search zipcode-->
-                  <input type="text" name="zipCode" id="zipCode" placeholder="Enter City" />
-                  <!--search button-->
-                  <button type="submit" class="button is-primary is-rounded is-small" id="searchZipCode">Search</button>
-                </form>
-              </div>
-            </div>
-            <div class="columns is-center is-mobile">
-              <!--buttons for cities-->
-              <button class="button is-medium is-primary is-outlined is-one-fifth">City-0</button>
-              <button class="button is-medium is-primary is-outlined is-one-fifth">City-1</button>
-              <button class="button is-medium is-primary is-outlined is-one-fifth">City-2</button>
-              <button class="button is-medium is-primary is-outlined is-one-fifth">City-3</button>
-              <button class="button is-medium is-primary is-outlined is-one-fifth">City-5</button>
-              <button class="button is-medium is-primary is-outlined is-one-fifth">City-6</button>
-              <button class="button is-medium is-primary is-outlined is-one-fifth">City-7</button>
-              <button class="button is-medium is-primary is-outlined is-one-fifth">City-8</button>
-              <button class="button is-medium is-primary is-outlined is-one-fifth">City-9</button>
-            </div>
-          </div>
-        </div>
-        <div class="section">
-          <div class="container has-text-center">
-            <div class="columns is-center">
-              <button class="column is-4 button is-medium is-primary">Weather 5 Day Forecast</button>
-              <button class="column button is-medium is-primary is-outlined">Day-1</button>
-              <button class="column button is-medium is-primary is-outlined">Day-2</button>
-              <button class="column button is-medium is-primary is-outlined">Day-3</button>
-              <button class="column button is-medium is-primary is-outlined">Day-4</button>
-            </div>
-          </div>
-        </div>
-      
-            
-              </div>
-              <div class="section">
-                <div class="container has-text-center">
-                  <div class="columns is-center">
-                    <div class="column is-6">
-                      <!--Displaying weather details-->
-                      <div id="weatherDetails">
-                        <!--Location-->
-                        <h1 id="location"></h1>
-                        <!--Weather Icon-->
-                        <img id="weatherIcon" src="" />
-                        <!--Weather Description-->
-                        <h3 id="weatherDescription"></h3>
-                        <!--Temperature-->
-                        <p id="temperature"></p>
-                        <!--Humidity-->
-                        <p id="humidity"></p>
-                        <!--Wind Speed-->
-                        <p id="windSpeed"></p>
-                      </div>
-                    </div>
-                  </div>
+    <div class="columns">
+        <div class="column is-one-quarter">
+            <article class="panel is-primary">
+                <p class="panel-heading">
+                    Search for a city:
+                </p>
+                <div class="panel-block">
+                    <p class="control has-icons-left">
+                        <input class="input is-primary" type="text" placeholder="City">
+                        <span class="icon is-left">
+                            <i class="fas fa-search" aria-hidden="true"></i>
+                        </span>
+                    </p>
                 </div>
-              </div>
-            </body>
+                <button class="button is-primary is-rounded is-medium is-fullwidth" id = "searchButton">Search</button>
+            </article>
+            <div class="box" id = "buttons">
+                <div class="buttons are-medium" id = "city-0">
+                </div>
+                <div class="buttons are-medium" id = "city-1">
+                </div>
+                <div class="buttons are-medium" id = "city-2">
+                </div>
+                <div class="buttons are-medium" id = "city-3">
+                </div>
+                <div class="buttons are-medium" id = "city-4">
+                </div>
+                <div class="buttons are-medium" id = "city-5">
+                </div>
+                <div class="buttons are-medium" id = "city-6">
+                </div>
+                <div class="buttons are-medium" id = "city-7">
+                </div>
+                <div class="buttons are-medium" id = "city-8">
+                </div>
+                <div class="buttons are-medium" id = "city-9">
+                </div>
+                <div class="buttons are-medium" id = "clear-button">
+                    <button class="button is-rounded is-medium is-fullwidth" id = "clear-button">Clear Recent Cities</button>
+                </div>
+
+            </div>
+ 
+
+        </div>
+        <!--Contains weather results-->
+        <div class="column">
+            <!--Weather summary for city chosen-->
+            <div class="column" id = "current"> 
+                <p id = "title"></p><img id = "icon">
+                <div id = "temp"></div>
+                <div id = "wind"></div>
+                <div id = "humidity"></div>
+            </div>
+
+            <div class="block">
+            </div>
+
+           
    
 <script src="./Develop/assets/script.js"></script>
 
