@@ -3,74 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <title>Weather DashBoard API</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Weather Dashboard</title>
 </head>
 
 <body>
-    <section class="hero is-small is-primary is-outlined is-bold">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title" style="font-size:60px">&#127781; Weather DashBoard</h1>
+    <header class="container-fluid text-center text-white bg-dark p-2">
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-lg-3 bg-light">
+                <h5 class="mt-1">Search for a City:</h5>
+                <div class="form-inline form-group">
+                    <input class="form-control" type="text" id="search-value" />
+                    <button class="btn btn-primary" id="search-button"> <i class="fa fa-search"></i> </button>
+                </div>
+
+                <ul class="list-group history"></ul>
+            </aside>
+
+            <div class="col-lg-9">
+                <div id="today" class="mt-3"></div>
+                <div id="forecast" class="row mt-3"></div>
             </div>
         </div>
-    </section>
-    <div>
-        <div class="column has-background-primary-light">
-            <div class="column">
-                Search for a City:
-                <section>
-                    <!--search zipcode-->
-                    <input type="text" name="zipCode" id="zipCode" placeholder="Enter ZipCode" />
-                    <!--search button-->
-                    <button type="submit" class="button is-primary is-rounded is-small"
-                        id="searchZipCode">Search</button>
-                </section>
-            </div>
-        </div>
-        <!--columns for cities1-9-->
-        <div><button class="button is-primary is-outlined">City-1</button>
-        </div>
-
-        <div>
-            <button class="button is-primary is-outlined">City-2</button>
-        </div>
-
-        <div>
-            <button class="button is-primary is-outlined">City-3</button>
-        </div>
-
-        <div>
-            <button class="button is-primary is-outlined">City-4</button>
-        </div>
-
-        <div>
-            <button class="button is-primary is-outlined">City-5</button>
-        </div>
-
-        <div>
-            <button class="button is-primary is-outlined">City-6</button>
-        </div>
-
-        <div>
-            <button class="button is-primary is-outlined">City-7</button>
-        </div>
-
-        <div>
-            <button class="button is-primary is-outlined">City-8</button>
-        </div>
-
-        <div>
-            <button class="button is-primary is-outlined">City-9</button>
-        </div>
-
     </div>
-
-
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
-<script src="./Develop/assets/script.js"></script>
 
 </html>
