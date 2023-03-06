@@ -16,6 +16,10 @@ Server-Side APIs Challenge: Weather Dashboard
 
 [Acceptance Criteria](#acceptancecriteria)
 
+[Installation](#installation)
+
+[Usage](#usage)
+
 [Application Screenshot Preview](#application-screenshot-preview)
 
 [License](#license)
@@ -47,3 +51,45 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 WHEN I am again presented with current and future conditions for that city
 ```
+
+## Application ScreenShot Preview
+
+![Application Screenshot Preview](./images/Weather_Dashboard_API.png)
+
+## Installation
+
+- To install the Server Side API Weather Dashboard, please follow the instructions below:
+
+```md
+Clone or download the repository to your local machine.
+Open the index.html file in your web browser.
+```
+
+## Usage
+
+- To use the Server Side API Weather Dashboard, follow the steps below:
+
+```md
+Open the index.html file in your web browser.
+Type the name of a city in the search bar and click the search button or press the enter key.
+The current weather conditions and a 5-day forecast for the city will be displayed.
+```
+
+## Features
+
+- The Server Side API Weather Dashboard has the following features:
+
+```md
+Users can search for the weather outlook for multiple cities.
+Users can view the current and future conditions for a city.
+The city is added to the search history.
+Users can click on a city in the search history to view its current and future conditions.
+The application displays the city name, date, an icon representation of weather conditions, temperature, humidity, and wind speed for the current weather conditions.
+The application displays the date, an icon representation of weather conditions, temperature, wind speed, and humidity for the 5-day forecast.
+```
+
+## License
+
+- This project is licensed under the terms of the MIT license.
+
+- ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
