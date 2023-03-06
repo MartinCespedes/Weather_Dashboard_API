@@ -48,7 +48,3 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 WHEN I am again presented with current and future conditions for that city
 ```
-
-## License
-
-- ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
