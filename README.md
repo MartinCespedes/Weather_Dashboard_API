@@ -1,8 +1,13 @@
 ## Server Side API Weather
 
-Server-Side APIs Challenge: Weather Dashboard
+- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+- ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
+- ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+-
 
-- ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+Server-Side APIs Challenge: Weather Dashboard
 
 ## Contents
 
@@ -13,6 +18,8 @@ Server-Side APIs Challenge: Weather Dashboard
 [Acceptance Criteria](#acceptancecriteria)
 
 [Application Screenshot Preview](#application-screenshot-preview)
+
+[License](#license)
 
 ## Description
 
@@ -41,3 +48,7 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 WHEN I am again presented with current and future conditions for that city
 ```
+
+## License
+
+- ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
